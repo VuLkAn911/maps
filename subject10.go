@@ -60,10 +60,10 @@ func main() {
 
 	cpuLoad := map[int]int{1: 40, 2: 65, 3: 30}
 
-	for i, v := range cpuLoad {
+	for _, v := range cpuLoad {
 
 		if v > 50 {
-			fmt.Println(i, v)
+			fmt.Println(v)
 		}
 
 	}
