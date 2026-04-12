@@ -57,16 +57,17 @@ func main() {
 	// fmt.Printf("Пользователь %s вошёл в систему", userInfo["name"])
 
 	// sub 4
-
+	max := 0
 	cpuLoad := map[int]int{1: 40, 2: 65, 3: 30}
 
 	for _, v := range cpuLoad {
 
-		if v > 50 {
-			fmt.Println(v)
+		if v > max {
+			max = v
 		}
 
 	}
+	fmt.Println(max)
 
 	// sub 5
 
